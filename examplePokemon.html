@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<script src="jsStart.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "proj3.css" />
+
+<body onload="setupData(); setupDataB();">
+
+<div id="playerMove"></div>
+<!--<button onclick="setExample()">Click me to select random wild Pokemon.</button>-->
+
+<div class="game">
+  <div class="opponent">
+	<div class="stats">
+      <div class="top">
+        <div class="pokeballs">
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+        </div>
+        <div id = "apHP" class="hp-count"></div>
+		<div id="HPa"></div>
+
+      </div>
+	  <div id="namea"></div>
+	  	 <img id="myImg" class="pokemon" src="" width="200" height="200">
+
+    </div>
+</div>
+	 <div class="player">
+    <div class="statsb">
+      <div class="bottom">
+        <div class="pokeballs">
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+        </div>
+        <!--<div id = "myHP" class="hp-count">100</div>-->
+		<div id="myHPa"></div>
+      </div>
+      <!--<span class="name">
+        Blastoise
+      </span>-->
+	  <div id="nameb"></div>
+	  <img id="myImga" class="pokemon" width="200" height="200"/>
+    </div>
+    <!--<img class="pokemon" src="http://bit.ly/blastoisegif" alt="A gif from blastoises back sprite" />-->
+  </div>
+	</div>
+	<div class="box">
+  <div id = "message" class="message">
+    What should your pokemon do?
+  </div>
+  <div class="actions">
+    <button onclick = "waterCannon()">Good attack</button>
+    <button onclick = "waterPulse()">Weak attack</button>
+    <button onclick = "toss()">throw</button>
+    <button onclick = "run()">run</button>
+  </div>
+  <div class = "continue">
+    <button onclick = "compPokemon()">Opponent Move</button>
+  </div>
+</div>
+<p id="ranid"></p>
+	<p id="ranP"></p>
+	<p id="ranName"></p>
+	<p id="Type1"></p>
+	<p id="Type2"></p>
+	<p id="Total"></p>
+	<p id="HP"></p>
+	<p id="Attack"></p>
+	<p id="Defense"></p>
+	<p id="SpAtk"></p>
+	<p id="SpDef"></p>
+	<p id="Speed"></p>
+	<p id="Generation"></p>
+	<p id="Legendary"></p>
+	<p id="filename"></p>
+	<p id="filenameB"></p>
+</body>
+</html>

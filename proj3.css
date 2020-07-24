@@ -1,0 +1,252 @@
+body {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.game {
+  position: relative;
+  /*background-image: url('http://bit.ly/pokemonbg');*/
+  background-image: url('background.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  border-radius: 8px 8px 0 0;
+  height: 600px;
+  width: 800px;
+}
+
+.opponent {
+  position: relative;
+  height: 300px;
+}
+
+.opponent .stats {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  width: 320px;
+  background-color: transparent;
+}
+
+
+
+.player {
+  position: relative;
+  height: 192px;
+}
+
+.player .statsb {
+  position: absolute;
+  top: 48px;
+  left: 100px;
+  width: 320px;
+}
+
+
+
+/*
+.player .pokemon {
+  position: absolute;
+  left: 110px;
+  bottom: 60px;
+  width: 160px;
+}
+*/
+
+/*.player .pokemon {
+  position: absolute;
+  left: 100px;
+  bottom: 10px;
+  width: 160px;
+}
+.opponent .pokemon {
+  position: absolute;
+  bottom: 0;
+  right: 140px;
+  width: 100px;
+}
+
+.opponent .pokemon {
+	position: absolute;
+	left: 450;
+	bottom: 60px;
+	width: 160px;
+	animation-delay: 1s;
+}
+
+
+*/
+
+
+
+.player .pokemon {
+  background-image: pokemon;
+  position: absolute;
+  animation-name: idle;
+  animation-delay: 1s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.opponent .pokemon {
+  background-image: pokemon;
+  position: absolute;
+  animation-name: idleopp;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#div5 {animation-timing-function: ease-in-out;}
+@keyframes idle {
+  0%   {left:100px; top:45px;}
+  25%  {left:80px; top:25px;}
+  50%  {left:100px; top:45px;}
+  75%  {left:120px; top:25px;}
+  100% {left:100px; top:45px;}
+}
+
+@keyframes idleopp {
+  0%   {left:100px+-; top:79px;}
+  25%  {left:80px; top:59px;}
+  50%  {left:100px; top:79px;}
+  75%  {left:120px; top:59px;}
+  100% {left:100px; top:79px;}
+}
+
+
+.box {
+  padding: 8px;
+  background: #333;
+  border: 3px solid black;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  color: #fff;
+  height: 120px;
+  width: 784px;
+}
+
+.box .message {
+  position: relative;
+  float: left;
+  font-size: 24px;
+  width: 50%;
+}
+.box .continue {
+  position: absolute;
+  margin-top: 30px;
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+.box .continue  button {
+  position: relative;
+  float: left;
+  background: #666;
+  border: 3px solid #888;
+  border-radius: 4px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 14px;
+  margin: 4px;
+  margin-top: 50px;
+
+  padding: 16px;
+  outline: none !important;
+}
+.box .continue button:hover {
+  background: #777;
+  border-color: #999;
+}
+
+.box .continue button:active {
+  background: #555;
+  border-color: #666;
+}
+
+.box .actions {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.box .actions button {
+  position: relative;
+  float: left;
+  background: #666;
+  border: 3px solid #888;
+  border-radius: 4px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 14px;
+  margin: 4px;
+  padding: 16px;
+  width: calc(50% - 8px);
+  height: calc(50% - 8px);
+  outline: none !important;
+}
+
+.box .actions button:hover {
+  background: #777;
+  border-color: #999;
+}
+
+.box .actions button:active {
+  background: #555;
+  border-color: #666;
+}
+.stats {
+  background: #111;
+  color: white;
+  padding: 12px;
+}
+
+.stats {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -30px;
+}
+
+
+
+.stats .pokeball {
+  position: relative;
+  float: left;
+  background-image: url('http://bit.ly/pokeballimg');
+  background-size: 100% 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.stats .hp-count:before {
+  content: 'HP: '
+}
+
+.stats .hp-count {
+  float: right;
+}
+
+
+.stats .name {
+  font-weight: bold;
+}
+
+.stats .level:before {
+  content: "LVL"
+}
+
+.left{
+	float: left;
+	background-color: transparent;
+}
+
+.statsb{
+	position: absolute;
+	margin-left: -30px;
+	float:left; 
+	background-color: transparent;
+}
+	

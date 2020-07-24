@@ -1,0 +1,25 @@
+body {
+	background: blue;
+	background-image:url('background.jpg');
+	color: black;
+}
+
+
+#demo{
+	position:absolute; left: 300px; top:300px; background-color:transparent;
+}
+
+.demo{
+	position:absolute; left: 300px; top:300px; background-color:transparent;
+}
+	
+
+
+#image {
+	height: 296px;
+	width:  228px;
+
+	background: 
+	url('proj2_sprite.png') 0px 0px;
+
+}
